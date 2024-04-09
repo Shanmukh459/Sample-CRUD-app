@@ -15,27 +15,7 @@ app.get('/', (req, res) => {
 //routes
 app.use('/api/products', productRoute)
 
-// app.get('/api/products/:id', async (req,res) => {
-    
-// })
-
-// app.post('/api/products', async(req, res) => {
-    
-// })
-
-// //update a product
-
-// app.put('/api/products/:id', async (req,res) => {
-    
-// })
-
-// //delete a product
-
-// app.delete('/api/products/:id', async (req, res) => {
-    
-// })
-
-
+//database connection
 mongoose.connect("mongodb+srv://saikrrish459:7nWnm1s7xAypsWp9@backenddb.osu2szv.mongodb.net/Node-API?retryWrites=true&w=majority&appName=BackendDB")
 .then(() => {
     console.log("Connected to database!")
